@@ -15,9 +15,13 @@ const config: Config = {
       },
       colors: {
         "purp" : "#6919ff"
+      },
+      gridTemplateRows: {
+        "rows-30" : "repeat(30, minmax(0,1fr)",
+
       }
     },
   },
-  plugins: [],
+  plugins: [require("@xpd/tailwind-3dtransforms")],
 };
 export default config;
