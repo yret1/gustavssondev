@@ -85,7 +85,7 @@ const ProjectCard : React.FC<ProjectCardProps> = ({ ulRef, cardRef, project}) =>
   return (
     <li ref={setMultipleRefs(itemRef, cardRef)} className="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">
 
-        <Link onClick={() => handleProjectClick(project)} className="group block h-full w-full rounded-md border border-neutrals-50/30" href={`/projects/${project.title}`}>
+        <Link onClick={() => handleProjectClick(project)} className="group block h-full w-full rounded-md border border-slate-50/30" href={`/projects/${project.title}`}>
 
         <img className="pointer-events-none absolute inset-0 -z-9 h-full w-full object-cover transition-[transform,opacity,filter] duration-700 group-hover:scale-105 group-focus-visible:scale-105"
             src={project.mainImg}
@@ -97,16 +97,16 @@ const ProjectCard : React.FC<ProjectCardProps> = ({ ulRef, cardRef, project}) =>
             style={{objectPosition: `${distanceFromCenter}% center`, backgroundColor: "rgb(244, 223, 74)"}} />
 
 
-            <article className="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-neutrals-900/50 p-4 text-center opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
+            <article className="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-slate-900/50 p-4 text-center opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
 
                 <div className="overflow-hidden">
-                    <time dateTime={project.date} className="block translate-y-full text-xs uppercase text-neutrals-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0">{project.date}</time>
+                    <time dateTime={project.date} className="block translate-y-full text-xs uppercase text-slate-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0">{project.date}</time>
                 </div>
                 <div className="overflow-hidden">
                   <h3 className="translate-y-full text-2xl font-bold transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-4xl">{project.title}</h3>
                   </div>
                 <div className="overflow-hidden">
-                  <p className="translate-y-full text-xs text-neutrals-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-sm">{project.type}</p>
+                  <p className="translate-y-full text-xs text-slate-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-sm">{project.type}</p>
                 </div>
             </article>
 
