@@ -1,7 +1,8 @@
 
 
 const initialState = {
-    data: []
+    data: [],
+    selectedProject: null
 }
 
 
@@ -11,6 +12,11 @@ const dataReducer = (state = initialState, action : any) => {
             return {
                 ...state,
                 data: action.payload
+            }
+        case "SET_SELECTED_PROJECT":
+            return {
+                ...state,
+                selectedProject: action.payload
             }
         default:
             return state

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { useDispatch } from "react-redux";
 
 
 type Project = {
@@ -25,6 +26,9 @@ interface ProjectCardProps {
 
 }
 const ProjectCard : React.FC<ProjectCardProps> = ({ ulRef, cardRef, project}) => {
+
+
+  const dispatch = useDispatch();
 
 
   const [distanceFromCenter, setDistanceFromCenter] = useState(0);
@@ -72,10 +76,16 @@ const ProjectCard : React.FC<ProjectCardProps> = ({ ulRef, cardRef, project}) =>
   };
 
 
+
+  const handleProjectClick = (currentProject : any) => {
+    dispatch({type: 'SET_SELECTED_PROJECT', payload: currentProject})
+  }
+
+
   return (
     <li ref={setMultipleRefs(itemRef, cardRef)} className="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">
 
-        <Link className="group block h-full w-full rounded-md border border-neutrals-50/30" href={`/projects/${project.title}`}>
+        <Link onClick={() => handleProjectClick(project)} className="group block h-full w-full rounded-md border border-neutrals-50/30" href={`/projects/${project.title}`}>
 
         <img className="pointer-events-none absolute inset-0 -z-9 h-full w-full object-cover transition-[transform,opacity,filter] duration-700 group-hover:scale-105 group-focus-visible:scale-105"
             src={project.mainImg}

@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
-import "./globals.css";
-import { Analytics } from "@vercel/analytics/react"
-import Navbar from "./components/Navbar";
-import StoreProvider from "./StoreProvider";
-import Datahandler from "./components/Datahandler";
-import Footer from "./components/Footer";
+import "../globals.css";
 
 
 const inter = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GUSTAVSSON DEV | Home",
+  title: "GUSTAVSSON DEV | Projects",
   description: "A portfolio website for Gustavsson Development Studio, Specialising in web development and integration.",
   keywords: ["frontend", "web development", "react", "tailwindcss", "nextjs", "upwork", "freelancer", "portfolio", "gustavsson dev","mjukvara", "mjukvaruutvecklare"],
   icons: [
@@ -28,19 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <Analytics />
-      <StoreProvider>
-      <body className={`${inter.className} text-white scroll-smooth`}>
-       
-        <Datahandler />
-        <Navbar />
-        {children}
-        <Footer />
+        <main>
 
-        
-        </body>
-      </StoreProvider>
-    </html>
+            {children}
+        </main>
+    
+  
+ 
   );
 }

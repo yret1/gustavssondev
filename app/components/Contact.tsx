@@ -66,15 +66,15 @@ const Contact = () => {
 
                 <fieldset className="flex flex-col gap-2 w-full lg:w-8/12">
                     <label htmlFor="name" className="text-2xl text-white text-opacity-30">NAME</label>
-                    <input onChange={(e) => setName(e.currentTarget.value)} value={name} className="bg-transparent rounded-md fill-none border-purp border-opacity-30 border-2 py-2 px-4" type="text" name="name" />
+                    <input onChange={(e) => setName(e.currentTarget.value)} value={name} className="bg-transparent rounded-md fill-none border-purp border-opacity-30 border-2 py-2 px-4" id="name" type="text" name="name" />
                 </fieldset>
                 <fieldset className="flex flex-col gap-2 w-full lg:w-8/12">
                     <label htmlFor="email"  className="text-2xl text-white text-opacity-30">EMAIL</label>
-                    <input onChange={(e) => setEmail(e.currentTarget.value)} value={email} className="bg-transparent rounded-md fill-none border-purp border-opacity-30 border-2 py-2 px-4" type="email" name="email" />
+                    <input onChange={(e) => setEmail(e.currentTarget.value)} value={email} className="bg-transparent rounded-md fill-none border-purp border-opacity-30 border-2 py-2 px-4" id="email" type="email" name="email" />
                 </fieldset>
                 <fieldset className="flex flex-col gap-2 w-full lg:w-8/12">
                     <label className="text-2xl text-white text-opacity-30" htmlFor="message">MESSAGE</label>
-                    <textarea onChange={(e) => setMessage(e.currentTarget.value)} value={message} className="bg-transparent rounded-md fill-none border-purp min-h-40 border-opacity-30 border-2 py-2 px-4" name="message" id=""></textarea>
+                    <textarea onChange={(e) => setMessage(e.currentTarget.value)} value={message} className="bg-transparent rounded-md fill-none border-purp min-h-40 border-opacity-30 border-2 py-2 px-4" name="message" id="message"></textarea>
                 </fieldset>
 
                 <button className="w-8/12 bg-purp py-5 text-2xl rounded-md border-2 border-purp transition-all duration-300 hover:border-white">{result}</button>

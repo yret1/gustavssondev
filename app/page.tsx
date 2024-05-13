@@ -1,7 +1,7 @@
 'use client'
 
 
-import {motion} from 'framer-motion'
+import {AnimatePresence, motion} from 'framer-motion'
 
 import About from "./components/About";
 import Hero from "./components/Hero";
@@ -11,10 +11,13 @@ import Projects from './components/Projects';
 import UserStories from './components/UserStories';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import Pagewrapper from './components/Pagewrapper';
 
 
 export default function Home() {
   return (
+    <AnimatePresence mode='wait'>
+    <Pagewrapper className="z-50 overflow-hidden">
     <main className="flex min-h-screen  flex-col items-center justify-between">
 
 
@@ -42,5 +45,7 @@ export default function Home() {
 
     
     </main>
+    </Pagewrapper>
+    </AnimatePresence>
   );
 }
