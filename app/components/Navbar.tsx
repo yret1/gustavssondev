@@ -54,7 +54,7 @@ const Navbar = () => {
 
 
     
-    <nav aria-label='Navbar' className={`flex justify-center items-center px-4 lg:px-8 lg:py-4 py-2 rounded-full w-11/12 transition-all duration-500 lg:w-8/12 ${navbg ? "bg-black bg-opacity-45" : "bg-transparent"}   `}>
+    <nav aria-label='Navbar' className={`flex justify-center backdrop-blur-md items-center px-4 lg:px-8 lg:py-4 py-2 rounded-full w-11/12 transition-all duration-500 lg:w-8/12 ${navbg ? "bg-black bg-opacity-45" : "bg-transparent"}   `}>
 
 
 

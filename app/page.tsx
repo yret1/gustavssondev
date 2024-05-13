@@ -8,6 +8,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Image from 'next/image';
 import Projects from './components/Projects';
+import UserStories from './components/UserStories';
+import Services from './components/Services';
 
 
 export default function Home() {
@@ -32,6 +34,8 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <UserStories />
+      <Services />
      
 
     
