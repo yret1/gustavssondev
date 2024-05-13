@@ -4,7 +4,9 @@ import { Vortex } from "./ui/Vortex"
 
 const UserStories = () => {
   return (
-    <section className="min-h-screen w-screen overflow-hidden bg-slate-900 relative">
+    <section
+    id="reviews" 
+    className="min-h-screen w-screen overflow-hidden bg-slate-900 relative">
         <Vortex
         rangeY={400}
         particleCount={200}
@@ -30,6 +32,11 @@ const UserStories = () => {
                     name: "Leo Tamburini",
                     title: "CEO",
                     quote: "Amazing guy and amazing work. Could not ask for more. Always listened to my feedback and made improvements. Explained me how things were going all along the process. Very skillful."
+                },
+                {
+                    name: "Jakob",
+                    title: "Freelance Journalist",
+                    quote: "I was very happy to work with Simon again. His very skilled and I was very happy with the result of this project."
                 }
             ]} />
 

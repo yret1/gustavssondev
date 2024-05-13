@@ -10,7 +10,7 @@ const Projects = () => {
 
 
   return (
-   <section className="min-h-screen w-screen relative bg-slate-900 flex py-10 flex-col justify-start items-center">
+   <section id="projects" className="min-h-screen w-screen relative bg-slate-900 flex py-10 flex-col justify-start items-center">
 
     <Tag text="Projects" id="Projects" />
 

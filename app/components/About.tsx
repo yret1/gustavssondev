@@ -4,11 +4,11 @@ import Tag from "./Tag"
 
 const About = () => {
   return (
-    <section className="min-h-screen md:flex-row z-10 bg-slate-900 relative w-screen flex flex-col justify-center items-center border-b-[1px] border-opacity-15 border-white">
+    <section id="about" className="min-h-screen md:flex-row z-10 bg-slate-900 relative w-screen flex flex-col justify-center items-center border-b-[1px] border-opacity-15 border-white">
 
 
 
-        <section className="flex-1 w-full min-h-[60vh] md:h-screen bg-center bg-cover py-24" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1576110598658-096ae24cdb97?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'}}></section>
+        <section className="flex-1 w-full min-h-[60vh] md:h-screen bg-bottom bg-contain bg-no-repeat py-24" style={{backgroundImage: 'url("/Profile.png")'}}></section>
 
 
         <section className="flex-1 flex flex-col gap-4 justify-center min-h-96 items-start lg:w-10/12 p-10">

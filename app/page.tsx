@@ -10,6 +10,7 @@ import Image from 'next/image';
 import Projects from './components/Projects';
 import UserStories from './components/UserStories';
 import Services from './components/Services';
+import Contact from './components/Contact';
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
       <Projects />
       <UserStories />
       <Services />
+      <Contact />
      
 
     

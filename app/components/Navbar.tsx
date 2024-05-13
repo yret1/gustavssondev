@@ -3,6 +3,7 @@ import {motion, useAnimation} from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Button from './Button'
+import Link from 'next/link'
 const Navbar = () => {
 
 
@@ -71,15 +72,15 @@ const Navbar = () => {
 
 
             <section className='hidden lg:flex justify-start items-center gap-4'>
-                <a className=' border-transparent flex flex-col justify-end items-end h-full group transition-all' href="">
+                <a className=' border-transparent flex flex-col justify-end items-end h-full group transition-all' href="/#about">
                     ABOUT
                     <hr className='h-[2px] w-full group-hover:bg-gradient-radial from-white bg-transparent border-0' />
                 </a>
-                <a className=' border-transparent flex flex-col justify-end items-end h-full group transition-all' href="">
+                <a className=' border-transparent flex flex-col justify-end items-end h-full group transition-all' href="/#projects">
                     WORK
                     <hr className='h-[2px] w-full group-hover:bg-gradient-radial from-white bg-transparent border-0' />
                 </a>
-                <a className=' border-transparent flex flex-col justify-end items-end h-full group transition-all' href="">
+                <a className=' border-transparent flex flex-col justify-end items-end h-full group transition-all' href="/#services">
                     SERVICES
                     <hr className='h-[2px] w-full group-hover:bg-gradient-radial from-white bg-transparent border-0' />
                 </a>
@@ -88,11 +89,13 @@ const Navbar = () => {
 
 
         <section aria-label='Gustavsson Development Studio' className="w-4/12 flex justify-center font-sans items-center">
+            <Link href='/'>
             <p className='text-white text-sm text-nowrap md:text-lg'><span className='font-bold'>GUSTAVSSON</span> DEV</p>
+            </Link>
         </section>
         <section aria-label='Contact button' className="w-4/12 flex justify-end items-center">
 
-        <Button text='Get In Touch' className='rounded-full text-[10px] lg:text-sm px-2 py-1' to='' />
+        <Button text='Get In Touch' className='rounded-full text-[10px] lg:text-sm px-2 py-1' to='/#contact' />
 
         </section>
 
