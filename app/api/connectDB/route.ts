@@ -14,7 +14,11 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
         const projects = await collection.find().toArray();
 
-        return Response.json({ data: projects });
+        const orderedProjectsOnDate = projects.sort((a :any ,b : any) => {
+            return new Date(b.date).getTime() - new Date(a.date).getTime()
+        })
+
+        return Response.json({ data: orderedProjectsOnDate });
 
     }catch(e) {
         return Response.error()
