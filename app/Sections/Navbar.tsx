@@ -32,7 +32,7 @@ const Navbar = () => {
   });
 
   return (
-    <section className="w-screen flex fixed top-0 z-50 justify-center items-center h-20">
+    <section aria-label="Navbar" className="w-screen flex fixed top-0 z-50 justify-center items-center h-20">
       <AnimatePresence>
         {open && (
           <motion.section
@@ -44,7 +44,7 @@ const Navbar = () => {
           >
             <div className="border-slate-600 pt-4 bg-stone-900/90 lg:hidden">
               <div className="mx-auto w-11/12 pt-10 max-w-7xl 2xl:w-4/5">
-                <nav className="flex flex-col justify-center divide-y-0.5 divide-slate-600">
+                <nav aria-controls="Mobile Navbar"  className="flex flex-col justify-center divide-y-0.5 divide-slate-600">
                   <Link
                     onClick={handleClick}
                     href="/#about"

@@ -7,7 +7,7 @@ import Image from "next/image";
 import Projects from "./Sections/Projects";
 import UserStories from "./Sections/UserStories";
 import Services from "./components/Services";
-import Contact from "./components/Contact";
+import Contact from "./Sections/Contact";
 
 export default function Home() {
   return (

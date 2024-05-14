@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import Tag from "./Tag";
+import Tag from "../components/Tag";
 
 const Contact = () => {
   const [result, setResult] = useState<string>("Send Message");
@@ -69,6 +69,7 @@ const Contact = () => {
             </label>
             <input
               onChange={(e) => setName(e.currentTarget.value)}
+              aria-autocomplete="list"
               value={name}
               className="bg-transparent rounded-md fill-none border-purp border-opacity-30 border-2 py-2 px-4"
               id="name"
@@ -84,6 +85,7 @@ const Contact = () => {
               EMAIL
             </label>
             <input
+              aria-autocomplete="list"
               onChange={(e) => setEmail(e.currentTarget.value)}
               value={email}
               className="bg-transparent rounded-md fill-none border-purp border-opacity-30 border-2 py-2 px-4"
