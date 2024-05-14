@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import PlausibleProvider from "next-plausible";
 
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
@@ -57,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics gaId="G-NVQ14GWF14" />
+      <PlausibleProvider domain="gustavssondev.com" />
       <Analytics />
       <SpeedInsights />
       <StoreProvider>
