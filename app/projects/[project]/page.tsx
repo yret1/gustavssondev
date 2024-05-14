@@ -69,8 +69,7 @@ const ProjectPage = () => {
 
   return (
     //Might remove, Idea was to create fading exitanimations. Doesnt work as of now... //
-    <AnimatePresence mode="wait">
-      <Pagewrapper className="z-50">
+<>
         {currentProject && (
           <section className="bg-slate-900 w-screen min-h-screen">
             {/* 
@@ -252,8 +251,7 @@ const ProjectPage = () => {
             </Link>
           </section>
         )}
-      </Pagewrapper>
-    </AnimatePresence>
+</>
   );
 };
 

@@ -16,8 +16,6 @@ import Pagewrapper from '../components/Pagewrapper';
 
 export default function Home() {
   return (
-    <AnimatePresence mode='wait'>
-    <Pagewrapper className="z-50 overflow-hidden">
     <main className="flex min-h-screen  flex-col items-center justify-between">
 
 
@@ -45,7 +43,5 @@ export default function Home() {
 
     
     </main>
-    </Pagewrapper>
-    </AnimatePresence>
   );
 }
