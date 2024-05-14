@@ -32,7 +32,7 @@ const Navbar = () => {
   });
 
   return (
-    <section aria-label="Navbar" className="w-screen flex fixed top-0 z-50 justify-center items-center h-20">
+    <header aria-label="Primary" className="w-screen flex fixed top-0 z-50 justify-center items-center h-20">
       <AnimatePresence>
         {open && (
           <motion.section
@@ -94,11 +94,12 @@ const Navbar = () => {
         }   `}
       >
         <section
-          aria-label="Menu"
+          aria-label="Open Mobile Navbar"
           onClick={handleClick}
           className={`w-4/12 flex justify-start h-full items-center gap-2`}
         >
           <section
+            aria-label="Close Mobile Navbar"
             onClick={handleClick}
             className={`${
               navbg ? "bg-black bg-opacity-35" : "bg-transparent"
@@ -150,7 +151,6 @@ const Navbar = () => {
           </Link>
         </section>
         <section
-          aria-label="Contact button"
           className="w-4/12 flex justify-end items-center"
         >
           <Button
@@ -161,7 +161,7 @@ const Navbar = () => {
           />
         </section>
       </nav>
-    </section>
+    </header>
   );
 };
 

@@ -17,6 +17,7 @@ const Button: React.FC<ButtonProps> = ({ text, className, to, reverse, label }) 
         aria-label={label}
        href={to}>
         <button
+        aria-label="Button"
           aria-controls="Button"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
@@ -42,6 +43,7 @@ const Button: React.FC<ButtonProps> = ({ text, className, to, reverse, label }) 
     return (
       <a aria-label={label} href={to}>
         <button
+          aria-label="Button"
           aria-controls="Button"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
