@@ -15,7 +15,7 @@ const inter = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "GUSTAVSSON DEV",
-  description: "A portfolio website for Gustavsson Development Studio, Specialising in web development and integration.",
+  description: "Gustavsson Development Studio, Specialising in modern web development and integration.",
   applicationName: "Gustavsson Dev",
   authors: [{name: "Simon Gustavsson"}]
   ,
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
   publisher: "Gustavsson Development Studio",
 
   openGraph: {
-    images: ["https://i.gyazo.com/4d9b773e408f8ace866803348476f6d6.png"],
+    images: ["/imagebase.png"],
     title: "GUSTAVSSON DEV",
-    description: "A portfolio website for Gustavsson Development Studio, Specialising in web development and integration.",
+    description: "Gustavsson Development Studio, Specialising in modern web development and integration.",
     url: "https://gustavsson.dev",
     type: "website",
     siteName: "GUSTAVSSON DEV",
     locale: "en_US",
   },
   twitter: {
-    images : ["https://i.gyazo.com/4d9b773e408f8ace866803348476f6d6.png"],
+    images : ["/imagebase.png"],
     creator: "@gustavsson_dev",
     site: "@gustavsson_dev",
     card: "summary_large_image",
