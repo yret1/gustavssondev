@@ -10,6 +10,14 @@ const Contact = () => {
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if(name == "" || email == "" || message == "" ){
+      setResult("Please fill in all fields");
+
+      setTimeout(() => {
+        setResult("Send Message");
+      })
+    }else
     setResult("Sending....");
     const formData = new FormData(e.currentTarget);
 
@@ -49,8 +57,8 @@ const Contact = () => {
           Got a request or a question?
         </h2>
         <p className="text-white text-opacity-35">
-          Prepare your message for liftoff and together lets create{" "}
-          <span className="text-white ">your dream website!</span> and grow your
+          Prepare your message for liftoff and let&apos;s create{" "}
+          <span className="text-white ">your dream website</span> and grow your
           business for the future!
         </p>
       </section>
@@ -68,6 +76,7 @@ const Contact = () => {
               NAME
             </label>
             <input
+            required
               onChange={(e) => setName(e.currentTarget.value)}
               aria-autocomplete="list"
               value={name}
@@ -85,6 +94,7 @@ const Contact = () => {
               EMAIL
             </label>
             <input
+            required
               aria-autocomplete="list"
               onChange={(e) => setEmail(e.currentTarget.value)}
               value={email}
@@ -103,6 +113,7 @@ const Contact = () => {
             </label>
             <textarea
               onChange={(e) => setMessage(e.currentTarget.value)}
+              required
               value={message}
               className="bg-transparent rounded-md fill-none border-purp min-h-40 border-opacity-30 border-2 py-2 px-4"
               name="message"

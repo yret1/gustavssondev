@@ -65,7 +65,7 @@ const Services = () => {
               </p>
               <p className="mb-8 max-w-prose text-pretty text-sm text-white text-opacity-70">
                 Together we will create a modern and revenue creating website
-                for you or you&apos;r company. Helping your business enter the
+                for you or your company. Helping your business enter the
                 modern website age!
               </p>
             </section>
@@ -104,8 +104,8 @@ const Services = () => {
                 $30 / H
               </p>
               <p className="mb-8 max-w-prose text-pretty text-sm text-white text-opacity-70">
-                For international clients i handle most of the contracts on
-                Upwork, a freelance platform. The reason being simpler invoicing
+                For international clients I handle most of the contracts on
+                Upwork, a freelance platform. The reason being simpler and safer invoicing
                 internationally.{" "}
               </p>
             </section>
@@ -133,15 +133,15 @@ const Services = () => {
           <article className="flex h-full w-full flex-col border-2 rounded-lg justify-between bg-[#0C1021] p-8">
             <section>
               <h3 className="mb-2 text-balance font-medium text-purp md:text-lg">
-                Custom Request
+                Custom Requests
               </h3>
               <p className="mb-2 flex text-3xl font-bold md:text-4xl">
                 Custom pricing
               </p>
               <p className="mb-8 max-w-prose text-pretty text-sm text-white text-opacity-70">
-                In the case that your project doesnt fit any of the choices
-                provided or you have questions regarding what i can do for you,
-                Lets chat and we will figure it out!
+                In the case that your project doesn&apos;t fit any of the choices
+                provided or you have questions regarding what I can do for you,
+                Lets chat and we will figure the scope of your project out!
               </p>
             </section>
             <section className="w-full h-full flex gap-2 flex-col justify-start items-start">
