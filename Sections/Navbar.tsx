@@ -1,5 +1,7 @@
 "use client";
-import { AnimatePresence, motion, useAnimation } from "framer-motion";
+
+
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Button from "../components/Button";
 import Link from "next/link";
