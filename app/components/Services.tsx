@@ -22,7 +22,9 @@ const Services = () => {
       </section>
 
       <section className="grid w-screen lg:grid-cols-5 gap-8 p-4 md:p-24 place-items-center">
-        <a href="#contact" className={`w-full h-full group md:col-span-2`}>
+        <a 
+        aria-label="Get in touch with me for a custom web application"
+        href="#contact" className={`w-full h-full group md:col-span-2`}>
           <article className="flex h-full w-full flex-col border-2 rounded-lg justify-between bg-[#0C1021] p-8">
             <section>
               <h3 className="mb-2 text-balance font-medium text-purp md:text-lg">
@@ -50,7 +52,9 @@ const Services = () => {
           </article>
         </a>
 
-        <a href="#contact" className={`w-full h-full group md:col-span-3`}>
+        <a 
+        aria-label="Get in touch with me for a custom website"
+        href="#contact" className={`w-full h-full group md:col-span-3`}>
           <article className="flex h-full w-full flex-col border-2 rounded-lg justify-between bg-[#0C1021] p-8">
             <section>
               <h3 className="mb-2 text-balance font-medium text-purp md:text-lg">
@@ -85,6 +89,7 @@ const Services = () => {
           </article>
         </a>
         <a
+          aria-label="Get in touch with me for a custom website for non-nordic clients, Redirects to Upwork.com"
           href="https://www.upwork.com/freelancers/~016509dc8b3fcee662?mp_source=share"
           referrerPolicy="no-referrer"
           target="_blank"
@@ -122,7 +127,9 @@ const Services = () => {
             <PlaceOrder />
           </article>
         </a>
-        <a href="#contact" className={`w-full h-full group md:col-span-2`}>
+        <a
+          aria-label="Get in touch with me for a custom web application"
+         href="#contact" className={`w-full h-full group md:col-span-2`}>
           <article className="flex h-full w-full flex-col border-2 rounded-lg justify-between bg-[#0C1021] p-8">
             <section>
               <h3 className="mb-2 text-balance font-medium text-purp md:text-lg">

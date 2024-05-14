@@ -46,6 +46,7 @@ const Navbar = () => {
               <div className="mx-auto w-11/12 pt-10 max-w-7xl 2xl:w-4/5">
                 <nav aria-controls="Mobile Navbar"  className="flex flex-col justify-center divide-y-0.5 divide-slate-600">
                   <Link
+                    aria-label="Go to about section"
                     onClick={handleClick}
                     href="/#about"
                     className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50 font-bold"
@@ -54,6 +55,7 @@ const Navbar = () => {
                   </Link>
 
                   <Link
+                    aria-label="Go to projects section"
                     onClick={handleClick}
                     href="/#projects"
                     className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50  font-bold"
@@ -62,6 +64,7 @@ const Navbar = () => {
                   </Link>
 
                   <Link
+                    aria-label="Go to services section"
                     onClick={handleClick}
                     href="/#services"
                     className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50  font-bold"
@@ -70,6 +73,7 @@ const Navbar = () => {
                   </Link>
 
                   <Link
+                    aria-label="Go to contact section"
                     onClick={handleClick}
                     href="/#contact"
                     className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50  font-bold"
@@ -107,6 +111,7 @@ const Navbar = () => {
 
           <section className="hidden lg:flex justify-start items-center gap-4 flex-wrap">
             <a
+              aria-label="Go to about section"
               className=" border-transparent flex flex-col justify-end items-end h-full group transition-all"
               href="/#about"
             >
@@ -114,6 +119,7 @@ const Navbar = () => {
               <hr className="h-[2px] w-full group-hover:bg-gradient-radial from-white bg-transparent border-0" />
             </a>
             <a
+              aria-label="Go to projects section"
               className=" border-transparent flex flex-col justify-end items-end h-full group transition-all"
               href="/#projects"
             >
@@ -121,6 +127,7 @@ const Navbar = () => {
               <hr className="h-[2px] w-full group-hover:bg-gradient-radial from-white bg-transparent border-0" />
             </a>
             <a
+              aria-label="Go to services section"
               className=" border-transparent flex flex-col justify-end items-end h-full group transition-all"
               href="/#services"
             >
@@ -134,7 +141,9 @@ const Navbar = () => {
           aria-label="Gustavsson Development Studio"
           className="w-4/12 flex justify-center font-sans items-center"
         >
-          <Link href="/">
+          <Link
+            aria-label="Go to home"
+           href="/">
             <p className="text-white text-sm text-nowrap md:text-lg">
               <span className="font-bold">GUSTAVSSON</span> DEV
             </p>
@@ -145,6 +154,7 @@ const Navbar = () => {
           className="w-4/12 flex justify-end items-center"
         >
           <Button
+            label="Contact Me"
             text="Get In Touch"
             className="rounded-full text-[10px] lg:text-sm px-2 py-1"
             to="/#contact"

@@ -59,6 +59,8 @@ const Projectdisplay = () => {
 
       <div className="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
         <button
+          aria-label="Scroll left"
+          aria-controls="Previous Project"
           onClick={handleLeftButtonClick}
           className="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"
         >
@@ -79,6 +81,8 @@ const Projectdisplay = () => {
         </button>
 
         <button
+          aria-label="Scroll right"
+          aria-controls="Next Project"
           onClick={handleRightButtonClick}
           className="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"
         >

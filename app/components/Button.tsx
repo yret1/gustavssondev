@@ -5,15 +5,19 @@ interface ButtonProps {
   className: string;
   to: string;
   reverse?: boolean;
+  label: string
 }
 
-const Button: React.FC<ButtonProps> = ({ text, className, to, reverse }) => {
+const Button: React.FC<ButtonProps> = ({ text, className, to, reverse, label }) => {
   const [isHovering, setIsHovering] = useState<boolean>(false);
 
   if (reverse) {
     return (
-      <a href={to}>
+      <a
+        aria-label={label}
+       href={to}>
         <button
+          aria-controls="Button"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           className={`relative transition-all duration-700 hover:scale-105 ease-in-out flex justify-center items-center overflow-hidden border-[1px]  ${className} `}
@@ -36,8 +40,9 @@ const Button: React.FC<ButtonProps> = ({ text, className, to, reverse }) => {
     );
   } else {
     return (
-      <a href={to}>
+      <a aria-label={label} href={to}>
         <button
+          aria-controls="Button"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           className={`relative transition-all ease-in-out flex justify-center items-center overflow-hidden border-[1px] ${className} duration-700 hover:scale-105`}

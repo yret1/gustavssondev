@@ -23,38 +23,46 @@ const Footer = () => {
       <section className="footer__links">
         <ul className="flex justify-center items-center p-8 gap-4 text-nowrap flex-wrap">
           <a
+            aria-label="Go to about section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#about"
           >
             <li>ABOUT</li>
           </a>
           <a
+            aria-label="Go to projects section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#projects"
           >
             <li>WORK</li>
           </a>
           <a
+            aria-label="Go to reviews section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#reviews"
           >
             <li>USER REVIEWS</li>
           </a>
           <a
+            aria-label="Go to services section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#services"
           >
             <li>SERVICES</li>
           </a>
           <a
+            aria-label="Go to contact section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#contact"
           >
             <li>CONTACT</li>
           </a>
           <a
+            aria-label="Go to behind the code"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
-            href="/#contact"
+            referrerPolicy="no-referrer"
+            target="_blank"
+            href="https://github.com/yret1/gustavssondev"
           >
             <li>BEHIND THE SCENES</li>
           </a>
@@ -71,6 +79,7 @@ const Footer = () => {
 
         <div className="flex justify-center items-center gap-2 w-full">
           <a
+            aria-label="Go to github profile"
             href="https://github.com/yret1"
             referrerPolicy="no-referrer"
             target="_blank"
@@ -92,6 +101,7 @@ const Footer = () => {
           </a>
 
           <a
+            aria-label="Go to linkedin profile"
             href="linkedin.com/in/simon-gustavsson-94b50090"
             referrerPolicy="no-referrer"
             target="_blank"

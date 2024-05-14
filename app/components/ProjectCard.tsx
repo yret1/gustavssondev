@@ -105,6 +105,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       className="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md"
     >
       <Link
+        aria-label={`Go to ${project.title} project`}
         onClick={() => handleProjectClick(project)}
         className="group block h-full w-full rounded-md border border-slate-50/30"
         href={`/projects/${project.title}`}
