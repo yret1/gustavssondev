@@ -8,10 +8,10 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Tag from "@/app/components/Tag";
+import Tag from "@/components/Tag";
 import { useEffect, useState } from "react";
-import MoreProjectCard from "@/app/components/MoreProjectCard";
-import Pagewrapper from "@/app/components/Pagewrapper";
+import MoreProjectCard from "@/components/MoreProjectCard";
+import Pagewrapper from "@/components/Pagewrapper";
 
 const ProjectPage = () => {
   // Get the selected project from the redux store

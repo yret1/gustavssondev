@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
-import Navbar from "./components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import Navbar from "../components/Navbar";
 import StoreProvider from "./StoreProvider";
-import Datahandler from "./components/Datahandler";
-import Footer from "./components/Footer";
+import Datahandler from "../components/Datahandler";
+import Footer from "../components/Footer";
 
 
 const inter = Manrope({ subsets: ["latin"] });
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Analytics />
+      <SpeedInsights />
       <StoreProvider>
       <body className={`${inter.className} bg-slate-900 text-white scroll-smooth`}>
        
