@@ -182,14 +182,14 @@ const Hero = () => {
         <section className="flex flex-col lg:flex-row gap-5 justify-center items-center">
           <Button
             label="Expolre my world"
-            text="Enter the matrix"
+            text="Explore my creations"
             reverse={true}
             className="px-5 w-full py-5 text-xl bg-purp rounded-sm"
             to="/#projects"
           />
           <Button
             label="See what i offer"
-            text="See services"
+            text="See what i offer"
             className="px-5 py-5 w-full text-xl bg-purp rounded-sm"
             to="/#services"
           />
