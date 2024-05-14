@@ -27,11 +27,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  //Base Layout and Metadata for the entire site, Will add Google-site verification, analytics and other metadata here.
   return (
     <html lang="en">
       <Analytics />
       <StoreProvider>
-      <body className={`${inter.className} text-white scroll-smooth`}>
+      <body className={`${inter.className} bg-slate-900 text-white scroll-smooth`}>
        
         <Datahandler />
         <Navbar />

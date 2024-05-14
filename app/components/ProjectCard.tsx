@@ -32,6 +32,7 @@ const ProjectCard : React.FC<ProjectCardProps> = ({ ulRef, cardRef, project}) =>
 
 
   const [distanceFromCenter, setDistanceFromCenter] = useState(0);
+  const [date, setDate] = useState<string>("");
   const itemRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
@@ -61,6 +62,15 @@ const ProjectCard : React.FC<ProjectCardProps> = ({ ulRef, cardRef, project}) =>
       ulRef.current?.removeEventListener('scroll', handleScroll);
     };
   }, [ulRef,itemRef]);
+
+
+
+  useEffect(() => {
+    const date = new Date(project.date);
+    const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long' };
+    setDate(date.toLocaleDateString("en-US", options));
+
+  }, [project.date])
 
 
   const setMultipleRefs = (...refs: (React.MutableRefObject<any> | ((instance: HTMLLIElement | null) => void))[]) => {
@@ -100,7 +110,7 @@ const ProjectCard : React.FC<ProjectCardProps> = ({ ulRef, cardRef, project}) =>
             <article className="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-slate-900/50 p-4 text-center opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
 
                 <div className="overflow-hidden">
-                    <time dateTime={project.date} className="block translate-y-full text-xs uppercase text-slate-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0">{project.date}</time>
+                    <time dateTime={project.date} className="block translate-y-full text-xs uppercase text-slate-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0">{date}</time>
                 </div>
                 <div className="overflow-hidden">
                   <h3 className="translate-y-full text-2xl font-bold transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-4xl">{project.title}</h3>
@@ -109,8 +119,6 @@ const ProjectCard : React.FC<ProjectCardProps> = ({ ulRef, cardRef, project}) =>
                   <p className="translate-y-full text-xs text-slate-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-sm">{project.type}</p>
                 </div>
             </article>
-
-           
         </Link>
 
     </li>

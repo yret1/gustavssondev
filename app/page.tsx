@@ -23,8 +23,8 @@ export default function Home() {
 
       <motion.section
         initial={{ opacity: 1, display: 'flex', y: 0 }}
-        animate={{ y: -2000, opacity: 1, display: 'none'}}
-        transition={{ duration: 1, delay: 0.3 }}
+        animate={{ y: "-100vh", opacity: 1, display: 'none'}}
+        transition={{ duration: 1, delay: 0.3, ease: 'easeInOut' }}
        className='absolute w-screen bg-slate-950 z-50 h-screen top-0 left-0 flex justify-center items-center'>
 
        <motion.section>

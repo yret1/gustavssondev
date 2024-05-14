@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### If you ended up here by accident
 
-## Getting Started
+** Go to: www.gustavssondev.com **
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Welcome behind the scenes
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+** You choose to see the inner workings of my page or maybe you are wondering what was used? Let me tell you! **
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologioes
 
-## Learn More
+This project used a bunch of different stuff, We will start from the basic fundementals and end on more specific pieces.
 
-To learn more about Next.js, take a look at the following resources:
+NextJS: This project was built, bundled and coded in Nextjs, this choice is primarily due to the efficent fullstack capabilites next provides.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Typescript: Since a few months back i left vanilla Javascript and started working with Typescript. The biggest gain is that we are getting way less unclear error messages whilst also improving the generall security a bit!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+React: Since Next is based in react this may seem obvious, but yes. React was used.
 
-## Deploy on Vercel
+Redux: Obviously we need redux to handle global states! This helps the dynamic pages render on current projects and does alot more behind the scenes! Especially nice to not have to throw serverside props all over the place!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MongoDB: My go to database, simple to use. Great scalabilty and pretty damn quick. For this project the db is handled serverside using NextJs api routes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+TailwindCSS: You will find no vanilla css in this file. Everything you see, including the landingpage matrix grid were styled using tailwind / clsx.
+
+Framer-Motion: To make the page pop a bit i opted for using Framer-Motion. Im still on the edge of wheter to use the popular GSAP libraries or to stay with framer. At the moment im going back and forth but for this project Framer was my go to!
+
+Web3Forms: A simple little web based API that sends emails from your apps to an email of your choice whilst also encrypting it! Get those pesky bots out of here!
+
+React-Canvas: Used to create more advanced animations. Mainly to run fireflies that came from Acernity.UI.
+
+## Ideas
+
+The goal was to keep the vibe of my first portfolio with strong purples with vibrant contrast. Even though the colors have changed slightly, the vibe is still there and the branding has generally stayed the same. 
+
+# Why did i feel the need to update?
+
+I recently launched my own company due to having great success freelancing. The idea was to create a slightly more proffesional looking page that could also attract new clients!
+
+
+
+
+
+
+
+
+*** Examinator
+
+Hej! Hoppas att nu gillar min ny portfolio. 
+Extremt viktigt att köra denna application i NextJS. 
+
+Ska koden köras lokalt så va beredda på att projekten inte kommer att visas då dessa hämtas med specifika inloggningsuppgifter från databasen. Dessa uppgifter finns inte med i Repot utan ligger i en .env som endast servern har tillgång till.
+
+Tack för mig
+
+//Simon
+
+
+

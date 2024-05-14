@@ -71,7 +71,7 @@ const Navbar = () => {
 
 
 
-            <section className='hidden lg:flex justify-start items-center gap-4'>
+            <section className='hidden lg:flex justify-start items-center gap-4 flex-wrap'>
                 <a className=' border-transparent flex flex-col justify-end items-end h-full group transition-all' href="/#about">
                     ABOUT
                     <hr className='h-[2px] w-full group-hover:bg-gradient-radial from-white bg-transparent border-0' />
