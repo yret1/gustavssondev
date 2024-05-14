@@ -144,7 +144,8 @@ const Navbar = () => {
         >
           <Link
             aria-label="Go to home"
-           href="/">
+            className="scroll-smooth"
+           href="/#">
             <p className="text-white text-sm text-nowrap md:text-lg">
               <span className="font-bold">GUSTAVSSON</span> DEV
             </p>
