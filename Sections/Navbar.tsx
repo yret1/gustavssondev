@@ -33,6 +33,48 @@ const Navbar = () => {
 
   return (
     <section className="w-screen flex fixed top-0 z-50 justify-center items-center h-20">
+
+
+        {open && <motion.section
+        className="fixed inset-0 top-10 -z-10 bg-stone-900/90 flex flex-col justify-center backdrop-blur-sm lg:hidden"
+        initial={{ opacity: 0, backgroundColor: "rgba(0,0,0,0)"}}
+        animate={{ opacity: 1, backgroundColor: "rgba(0,0,0,0.5)"}}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
+        >
+
+                <div className="border-slate-600 pt-4 bg-stone-900/90 lg:hidden">
+                    
+                    <div className="mx-auto w-11/12 pt-10 max-w-7xl 2xl:w-4/5">
+                        <nav className="flex flex-col justify-center divide-y-0.5 divide-slate-600">
+                            <a onClick={handleClick} href="/#about" className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50 font-bold">
+                                ABOUT
+                            </a>
+
+                            <a onClick={handleClick} href="/#projects" className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50  font-bold">
+                                WORK
+                            </a>
+
+                            <a onClick={handleClick} href="/#services" className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50  font-bold">
+                                SERVICES
+                            </a>
+
+                            <a onClick={handleClick} href="/#contact" className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50  font-bold">
+                                CONTACT
+                            </a>
+                        </nav>
+                    </div>
+
+                </div>
+
+
+            
+            
+            </motion.section>}
+
+
+
+
       <nav
         aria-label="Navbar"
         className={`flex justify-center backdrop-blur-md items-center px-4 lg:px-8 lg:py-4 py-2 rounded-full w-11/12 transition-all duration-500 lg:w-8/12 ${
@@ -45,6 +87,7 @@ const Navbar = () => {
           className={`w-4/12 flex justify-start h-full items-center gap-2`}
         >
           <section
+          onClick={handleClick}
             className={`${
               navbg ? "bg-black bg-opacity-35" : "bg-transparent"
             } h-full flex flex-col justify-center items-center gap-[6px] p-3 rounded-full lg:hidden`}
