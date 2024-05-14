@@ -1,11 +1,9 @@
 "use client";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "../components/Button";
 import Link from "next/link";
 const Navbar = () => {
-  const controls = useAnimation();
 
   const [open, setOpen] = useState<boolean>(false);
 
@@ -45,37 +43,37 @@ const Navbar = () => {
             <div className="border-slate-600 pt-4 bg-stone-900/90 lg:hidden">
               <div className="mx-auto w-11/12 pt-10 max-w-7xl 2xl:w-4/5">
                 <nav className="flex flex-col justify-center divide-y-0.5 divide-slate-600">
-                  <a
+                  <Link
                     onClick={handleClick}
                     href="/#about"
                     className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50 font-bold"
                   >
                     ABOUT
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     onClick={handleClick}
                     href="/#projects"
                     className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50  font-bold"
                   >
                     WORK
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     onClick={handleClick}
                     href="/#services"
                     className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50  font-bold"
                   >
                     SERVICES
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     onClick={handleClick}
                     href="/#contact"
                     className="py-4 ps-2 uppercase text-slate-200 transition-[letter-spacing,color] hover:tracking-wider hover:text-slate-50 focus-visible:tracking-wider focus-visible:text-slate-50  font-bold"
                   >
                     CONTACT
-                  </a>
+                  </Link>
                 </nav>
               </div>
             </div>
