@@ -67,7 +67,7 @@ export default function RootLayout({
       <Analytics />
       <SpeedInsights />
       <StoreProvider>
-      <body className={`${inter.className} bg-slate-900 text-white scroll-smooth`}>
+      <body className={`${inter.className} bg-slate-900 text-white scroll-smooth overflow-x-hidden`}>
        
         <Datahandler />
         <Navbar />
