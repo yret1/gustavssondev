@@ -1,11 +1,11 @@
 ### If you ended up here by accident
 
-** Go to: www.gustavssondev.com **
+**Go to: www.gustavssondev.com**
 
 
 ### Welcome behind the scenes
 
-** You choose to see the inner workings of my page or maybe you are wondering what was used? Let me tell you! **
+**You choose to see the inner workings of my page or maybe you are wondering what was used? Let me tell you!**
 
 
 ## Technologioes
@@ -45,7 +45,7 @@ I recently launched my own company due to having great success freelancing. The 
 
 
 
-*** Examinator
+***Examinator***
 
 Hej! Hoppas att nu gillar min ny portfolio. 
 Extremt viktigt att köra denna application i NextJS. 
