@@ -1,11 +1,9 @@
 import Button from "../components/Button";
 
 const Hero = () => {
- 
-
   return (
     <section
-    id="home"
+      id="home"
       className="h-screen w-screen herobg bg-purp flex justify-center items-center perspective-1000 sticky z-5 overflow-hidden inset-0"
     >
       <section className="grid grid-cols-12 rows-12  -z-10 absolute w-[150vw] rotate-x-[75deg] h-[100vh] transform -bottom-40  origin-left">

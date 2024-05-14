@@ -101,8 +101,7 @@ export const InfiniteMovingCards = ({
               ></div>
 
               <span className=" relative z-20 text-lg leading-[1.6] text-gray-100 font-normal">
-                
-              &quot; {item.quote} &quot;
+                &quot; {item.quote} &quot;
               </span>
 
               <div className="relative z-20 mt-10 flex flex-row items-center">
