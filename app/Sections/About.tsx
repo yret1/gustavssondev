@@ -7,13 +7,13 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen md:flex-row z-10 bg-slate-900 relative w-screen flex flex-col justify-center items-center border-b-[1px] border-opacity-15 border-white"
+      className="relative z-10 w-full flex flex-col lg:flex-row bg-slate-900"
     >
-      <section className="flex min-h-screen w-full items-center max-lg:flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,min(91.666667%/2,40rem))_minmax(0,min(91.666667%/2,40rem))_minmax(0,1fr)] xl:grid-cols-[minmax(0,1fr)_minmax(0,min(80%/2,40rem))_minmax(0,min(80%/2,40rem))_minmax(0,1fr)]">
+      <section className="">
         <Image
           src="/Profile.png"
           loading="lazy"
-          className="h-full w-full max-h-screen bg-neutrals-800 object-cover object-center lg:col-start-1 lg:col-end-3"
+          className="h-full w-full max-h-screen bg-slate-900 flex-1 object-cover object-center lg:col-start-1 lg:col-end-3"
           alt="Image of Simon Gustavsson, the founder of Gustavsson Dev"
           width={1328}
           height={1770}
@@ -21,7 +21,7 @@ const About = () => {
         />
       </section>
 
-      <section className="w-full flex flex-col justify-start items-start py-28 max-lg:mx-auto max-lg:w-11/12 max-lg:max-w-7xl lg:ps-10 xl:ps-20">
+      <section className="w-full flex-1 flex flex-col justify-center items-start py-28 max-lg:mx-auto max-lg:w-11/12 max-lg:max-w-7xl lg:ps-10 xl:ps-20">
         <Tag text="ABOUT" id="about" />
 
         <ReactTyped
