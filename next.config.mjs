@@ -8,12 +8,9 @@ const nextConfig = {
                 port: "",
 
             },
-            {
-                protocol: 'https',
-                hostname: 'storage.cloud.google.com',
-            }
         ]
-    }
+    },
+    
 };
 
 export default nextConfig;

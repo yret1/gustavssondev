@@ -5,12 +5,14 @@ const Footer = () => {
 
   return (
     <footer className="w-screen bg-slate-900">
-      <section className="flex justify-center items-center p-4">
+      <section className="flex justify-center items-center">
+
         <a href="/#">
           <Image
+          className="p-4"
             src={"/Logowhite.svg"}
-            width={50}
-            height={50}
+            width={100}
+            height={100}
             alt="Company logo"
           />
         </a>
@@ -69,7 +71,9 @@ const Footer = () => {
 
         <div className="flex justify-center items-center gap-2 w-full">
           <a
-            href=""
+            href="https://github.com/yret1"
+            referrerPolicy="no-referrer"
+            target="_blank"
             className="text-slate-500 transition-colors hover:text-slate-50 focus-visible:text-slate-50"
           >
             <svg
@@ -88,7 +92,9 @@ const Footer = () => {
           </a>
 
           <a
-            href=""
+            href="linkedin.com/in/simon-gustavsson-94b50090"
+            referrerPolicy="no-referrer"
+            target="_blank"
             className="text-slate-500 transition-colors hover:text-slate-50 focus-visible:text-slate-50"
           >
             <svg
