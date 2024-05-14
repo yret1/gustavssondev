@@ -1,6 +1,6 @@
-import Tag from "./Tag"
-import { InfiniteMovingCards } from "./ui/MovingCards"
-import { Vortex } from "./ui/Vortex"
+import Tag from "../components/Tag"
+import { InfiniteMovingCards } from "../components/ui/MovingCards"
+import { Vortex } from "../components/ui/Vortex"
 
 const UserStories = () => {
   return (

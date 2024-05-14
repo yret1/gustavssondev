@@ -3,10 +3,10 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Navbar from "../components/Navbar";
+import Navbar from "../Sections/Navbar";
 import StoreProvider from "./StoreProvider";
 import Datahandler from "../components/Datahandler";
-import Footer from "../components/Footer";
+import Footer from "../Sections/Footer";
 
 
 const inter = Manrope({ subsets: ["latin"] });

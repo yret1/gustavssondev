@@ -3,12 +3,12 @@
 
 import {AnimatePresence, motion} from 'framer-motion'
 
-import About from "../components/About";
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
+import About from "../Sections/About";
+import Hero from "../Sections/Hero";
+import Navbar from "../Sections/Navbar";
 import Image from 'next/image';
-import Projects from '../components/Projects';
-import UserStories from '../components/UserStories';
+import Projects from '../Sections/Projects';
+import UserStories from '../Sections/UserStories';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
 import Pagewrapper from '../components/Pagewrapper';

@@ -1,5 +1,5 @@
-import Projectdisplay from "./Projectdisplay"
-import Tag from "./Tag"
+import Projectdisplay from "../components/Projectdisplay"
+import Tag from "../components/Tag"
 
 
 const Projects = () => {

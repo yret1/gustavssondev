@@ -2,7 +2,7 @@
 import {motion, useAnimation} from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import Button from './Button'
+import Button from '../components/Button'
 import Link from 'next/link'
 const Navbar = () => {
 
