@@ -1,16 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import About from "../Sections/About";
 import Hero from "../Sections/Hero";
-import Navbar from "../Sections/Navbar";
 import Image from "next/image";
 import Projects from "../Sections/Projects";
 import UserStories from "../Sections/UserStories";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
-import Pagewrapper from "../components/Pagewrapper";
 
 export default function Home() {
   return (

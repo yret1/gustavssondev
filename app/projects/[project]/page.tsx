@@ -7,11 +7,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Tag from "@/components/Tag";
 import { useEffect, useState } from "react";
 import MoreProjectCard from "@/components/MoreProjectCard";
-import Pagewrapper from "@/components/Pagewrapper";
 
 const ProjectPage = () => {
   // Get the selected project from the redux store
