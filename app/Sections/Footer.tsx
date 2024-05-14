@@ -22,41 +22,52 @@ const Footer = () => {
 
       <section className="footer__links">
         <ul className="flex justify-center items-center p-8 gap-4 text-nowrap flex-wrap">
+        <li>
           <a
             aria-label="Go to about section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#about"
           >
-            <li>ABOUT</li>
+            ABOUT
           </a>
+          </li>
+          <li>
           <a
             aria-label="Go to projects section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#projects"
           >
-            <li>WORK</li>
+            WORK
           </a>
+          </li>
+          <li>
           <a
             aria-label="Go to reviews section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#reviews"
           >
-            <li>USER REVIEWS</li>
+            USER REVIEWS
           </a>
+          </li>
+          <li>
           <a
             aria-label="Go to services section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#services"
           >
-            <li>SERVICES</li>
+            SERVICES
           </a>
+          </li>
+          <li>
           <a
             aria-label="Go to contact section"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
             href="/#contact"
           >
-            <li>CONTACT</li>
+            CONTACT
           </a>
+          </li>
+          <li>
           <a
             aria-label="Go to behind the code"
             className="text-white text-opacity-40 hover:text-opacity-100 cursor-pointer transition-all"
@@ -64,8 +75,9 @@ const Footer = () => {
             target="_blank"
             href="https://github.com/yret1/gustavssondev"
           >
-            <li>BEHIND THE SCENES</li>
+            BEHIND THE SCENES
           </a>
+          </li>
         </ul>
       </section>
 
