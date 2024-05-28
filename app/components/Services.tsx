@@ -16,13 +16,13 @@ const Services = () => {
 
       <section className="w-screen flex justify-center items-center flex-col">
         <h1 className="font-bold text-white text-center text-nowrap text-lg lg:text-4xl">
-          Projects, Applications or Consultaions
+          No idea is too big or too small, let&apos;s create something amazing!
         </h1>
-        <p>I got you covered!</p>
+        <p>Together we will explore you&apos;r idea and shape it into the prodoct you need. Check out some of my services down below!</p>
       </section>
 
       <section className="grid w-screen lg:grid-cols-5 gap-8 p-4 md:p-24 place-items-center">
-        <a 
+        <a
         aria-label="Get in touch with me for a custom web application"
         href="#contact" className={`w-full h-full group md:col-span-2`}>
           <article className="flex h-full w-full flex-col border-2 rounded-lg justify-between bg-[#0C1021] p-8">
@@ -61,7 +61,7 @@ const Services = () => {
                 Website
               </h3>
               <p className="mb-2 flex text-3xl font-bold md:text-4xl">
-                $30 / H
+                From $ 500
               </p>
               <p className="mb-8 max-w-prose text-pretty text-sm text-white text-opacity-70">
                 Together we will create a modern and revenue creating website
@@ -101,7 +101,7 @@ const Services = () => {
                 Non-Nordic Clients
               </h3>
               <p className="mb-2 flex text-3xl font-bold md:text-4xl">
-                $30 / H
+                $25 / H
               </p>
               <p className="mb-8 max-w-prose text-pretty text-sm text-white text-opacity-70">
                 For international clients I handle most of the contracts on
